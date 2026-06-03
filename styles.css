@@ -1,0 +1,15 @@
+/* Excalidraw braucht einen Container mit definierter Hoehe,
+   sonst kollabiert die Zeichenflaeche auf 0 Pixel. */
+.econ-canvas {
+  height: 640px;
+  width: 100%;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+/* etwas Luft um den Fliesstext */
+main.content {
+  max-width: 900px;
+}

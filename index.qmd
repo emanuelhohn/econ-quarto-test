@@ -1,0 +1,28 @@
+---
+title: "Excalidraw in Quarto"
+subtitle: "Proof of Concept für das digitale Wirtschafts-Lernmaterial"
+---
+
+Diese Seite testet das eine technisch heikle Stück: ob sich die
+Excalidraw-Zeichenfläche in eine ganz normale Quarto-Seite einbetten lässt,
+die als statische Website auf GitHub Pages läuft. Den Text drumherum schreibe
+ich in Quarto-Markdown wie hier, die Zeichenfläche unten ist die eingebettete
+React-Komponente.
+
+Wenn du unten zeichnen kannst, ist der Beweis erbracht: Inhalt und
+interaktive Zeichenfläche im selben Dokument, ohne App-Gerüst, ohne Login,
+ohne Server.
+
+## Zeichenfläche
+
+```{=html}
+<div id="econ-canvas" class="econ-canvas"></div>
+<script type="module" src="excalidraw-mount.js"></script>
+```
+
+## Nächster Schritt
+
+Die Fläche startet leer. Im nächsten Schritt kommt hier das
+Angebot-und-Nachfrage-Template hinein (die Achsen, die beiden Kurven, der
+Gleichgewichtspunkt), das es im `econ-draw`-Prototyp schon gibt. Dafür
+brauche ich dann die Vorlage aus jenem Projekt.

@@ -1,0 +1,17 @@
+project:
+  type: website
+  output-dir: _site
+  resources:
+    - excalidraw-mount.js
+
+website:
+  title: "Wirtschafts-Lernmaterial"
+  navbar: false
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    include-in-header: header.html
+    toc: false
+    page-layout: full
